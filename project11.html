@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link href="stylesp11.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1 id="title">SpringCamp Survey</h1>
+    <p id="description">Share your experience in our bootcamp</p>
+    <form id="survey-form">
+     <label id="name-label" for="name">Enter Your Name: <input id="name" name="name" type="text" placeholder="Type your name" required /></label><br>
+      <label id="email-label" for="email">Enter Your Email: <input id="email" name="name" type="email" placeholder="Type your email" required/></label><br>
+      <label id="number-label" for="number">How old are you? <input id="number" type="number" name="age" min="13" max="120" placeholder="Age here" /></label><br>
+    <label for="dropdown">Which program did you enrol for?
+      <select id="dropdown" name="course">
+        <option value="">(select one)</option>
+            <option value="1">Web design</option>
+            <option value="2">Python</option>
+            <option value="3">Robotics</option>
+            <option value="4">Other</option>
+      </select>
+
+      <legend>What is your Gender?</legend>
+       <label for="male"><input id="male" type="radio" name="gender" value="male" /> Male</label>
+        <label for="female"><input id="female" type="radio" name="gender" value="female" /> Female</label>
+
+<legend>What are your Tech interests?</legend>
+        <label for="interests1">
+        <input  id="interests1" type="checkbox" required name="interests1" value="programming" /> Programming
+      </label>
+      <label for="interests2">
+        <input  id="interests2" type="checkbox" required name="interests2" value="robotics" /> Robotics
+      </label>
+<label for="interests3">
+        <input  id="interests3" type="checkbox" required name="interests3" value="graphics" /> Graphics design
+      </label>
+      <label for="interests4">
+        <input  id="interests4" type="checkbox" required name="interests4" value="ai" /> AI
+      </label><br>
+
+
+         <label for="bio">Add any additional comments
+          <textarea id="comments" name="comments" rows="7" cols="40" placeholder="..."></textarea>
+        </label>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
