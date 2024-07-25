@@ -1,0 +1,56 @@
+body {
+    border: 0px solid black;
+}
+h1,h2,p {
+  margin:0;
+}
+h2 {
+  text-align:left;
+  color: blue;
+}
+#header {
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+#header-img {
+  width: 20%;
+  max-width:40px;
+}
+#nav-bar {
+  display: inline-block;
+  margin-left: 30%;
+  margin-top: 5px;
+  position: fixed;
+  top:5;
+}
+#div_video, #div_form, #main_content{
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+#main_content p{
+  text-align:left;
+}
+.nav-link{
+  text-decoration: none;
+
+}
+#video {
+margin: 0;
+}
+#form {
+margin:0;
+}
+@media (max-width: 400px) {
+   header, div {
+     display:block;
+    width:100%;
+    }
+  }
+  @media (min-width: 401px) {
+   header, div {
+    width:80%;
+    }
+  }
