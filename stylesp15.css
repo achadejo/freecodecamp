@@ -1,0 +1,29 @@
+body {
+
+}
+
+#welcome-section{
+height: 100vh;
+}
+#navbar {
+  position: fixed;
+  top:0;
+}
+@media (max-width: 400px) {
+   #welcome-section{
+     display:block;
+    width:100%;
+    }
+  }
+  @media (min-width: 401px) {
+   #welcome-section{
+    width:80%;
+    }
+  }
+
+  .project-tile{   color: brown;
+  text-decoration: none;
+  }
+  #profile-link{
+    text-decoration:none;
+  }
